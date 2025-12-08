@@ -1,0 +1,394 @@
+{
+  "vv": {
+    "name": "Omnara Architecture",
+    "version": "1.0.0",
+    "nodeTypes": {
+      "Frontend": {
+        "description": "Web dashboard for users to view and interact with agents",
+        "category": "UI"
+      },
+      "Mobile": {
+        "description": "React Native mobile app for agent interaction",
+        "category": "UI"
+      },
+      "Backend": {
+        "description": "FastAPI web dashboard API for read operations",
+        "category": "Service"
+      },
+      "Servers": {
+        "description": "FastAPI + MCP agent communication server for write operations",
+        "category": "Service"
+      },
+      "Database": {
+        "description": "PostgreSQL database with unified messaging system",
+        "category": "Storage"
+      },
+      "Supabase": {
+        "description": "Authentication and backend services",
+        "category": "Service"
+      },
+      "MCP": {
+        "description": "Model Context Protocol for agent communication",
+        "category": "Protocol"
+      },
+      "CLI": {
+        "description": "Node.js CLI tool for MCP configuration",
+        "category": "Tool"
+      },
+      "SDK": {
+        "description": "Python SDK for agent integration",
+        "category": "Library"
+      },
+      "Webhooks": {
+        "description": "Webhook handlers for external integrations",
+        "category": "Integration"
+      },
+      "N8N": {
+        "description": "N8n workflow automation integration",
+        "category": "Integration"
+      },
+      "GitHub": {
+        "description": "GitHub Actions integration",
+        "category": "Integration"
+      }
+    },
+    "edgeTypes": {
+      "HTTP": {
+        "description": "HTTP/HTTPS communication",
+        "style": "solid"
+      },
+      "WebSocket": {
+        "description": "Real-time WebSocket connection",
+        "style": "animated"
+      },
+      "MCP_Protocol": {
+        "description": "Model Context Protocol communication",
+        "style": "dashed"
+      },
+      "Database_Connection": {
+        "description": "Database connection",
+        "style": "solid"
+      },
+      "Auth_Flow": {
+        "description": "Authentication flow",
+        "style": "dotted"
+      },
+      "API_Call": {
+        "description": "REST API call",
+        "style": "solid"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": "frontend",
+      "type": "text",
+      "x": 90,
+      "y": 14,
+      "width": 120,
+      "height": 60,
+      "text": "Frontend",
+      "vv": {
+        "nodeType": "Frontend",
+        "shape": "rectangle"
+      },
+      "color": 4
+    },
+    {
+      "id": "mobile",
+      "type": "text",
+      "x": 401,
+      "y": 18,
+      "width": 120,
+      "height": 60,
+      "text": "Mobile",
+      "vv": {
+        "nodeType": "Mobile",
+        "shape": "rectangle"
+      },
+      "color": 4
+    },
+    {
+      "id": "supabase",
+      "type": "text",
+      "x": 248,
+      "y": 77,
+      "width": 120,
+      "height": 60,
+      "text": "Supabase",
+      "vv": {
+        "nodeType": "Supabase",
+        "shape": "cloud"
+      },
+      "color": 3
+    },
+    {
+      "id": "backend",
+      "type": "text",
+      "x": 247,
+      "y": 201,
+      "width": 120,
+      "height": 60,
+      "text": "Backend",
+      "vv": {
+        "nodeType": "Backend",
+        "shape": "rectangle"
+      },
+      "color": 5
+    },
+    {
+      "id": "servers",
+      "type": "text",
+      "x": 249,
+      "y": 416,
+      "width": 120,
+      "height": 60,
+      "text": "Servers",
+      "vv": {
+        "nodeType": "Servers",
+        "shape": "rectangle"
+      },
+      "color": 5
+    },
+    {
+      "id": "database",
+      "type": "text",
+      "x": 52,
+      "y": 497,
+      "width": 120,
+      "height": 60,
+      "text": "Database",
+      "vv": {
+        "nodeType": "Database",
+        "shape": "cylinder"
+      },
+      "color": 1
+    },
+    {
+      "id": "mcp",
+      "type": "text",
+      "x": 327,
+      "y": 640,
+      "width": 120,
+      "height": 60,
+      "text": "MCP",
+      "vv": {
+        "nodeType": "MCP",
+        "shape": "hexagon"
+      },
+      "color": 6
+    },
+    {
+      "id": "cli",
+      "type": "text",
+      "x": 384,
+      "y": 521,
+      "width": 120,
+      "height": 60,
+      "text": "CLI",
+      "vv": {
+        "nodeType": "CLI",
+        "shape": "rectangle"
+      },
+      "color": 2
+    },
+    {
+      "id": "sdk",
+      "type": "text",
+      "x": 334,
+      "y": 763,
+      "width": 120,
+      "height": 60,
+      "text": "SDK",
+      "vv": {
+        "nodeType": "SDK",
+        "shape": "rectangle"
+      },
+      "color": 2
+    },
+    {
+      "id": "webhooks",
+      "type": "text",
+      "x": 366,
+      "y": 326,
+      "width": 120,
+      "height": 60,
+      "text": "Webhooks",
+      "vv": {
+        "nodeType": "Webhooks",
+        "shape": "rectangle"
+      },
+      "color": 3
+    },
+    {
+      "id": "n8n",
+      "type": "text",
+      "x": 222,
+      "y": 562,
+      "width": 120,
+      "height": 60,
+      "text": "N8N",
+      "vv": {
+        "nodeType": "N8N",
+        "shape": "rectangle"
+      },
+      "color": 3
+    },
+    {
+      "id": "github",
+      "type": "text",
+      "x": 74,
+      "y": 603,
+      "width": 120,
+      "height": 60,
+      "text": "GitHub",
+      "vv": {
+        "nodeType": "GitHub",
+        "shape": "rectangle"
+      },
+      "color": 3
+    }
+  ],
+  "edges": [
+    {
+      "id": "frontend-backend",
+      "fromNode": "frontend",
+      "toNode": "backend",
+      "text": "API calls",
+      "color": "#06b6d4",
+      "vv": {
+        "edgeType": "HTTP"
+      }
+    },
+    {
+      "id": "mobile-backend",
+      "fromNode": "mobile",
+      "toNode": "backend",
+      "text": "API calls",
+      "color": "#06b6d4",
+      "vv": {
+        "edgeType": "HTTP"
+      }
+    },
+    {
+      "id": "frontend-supabase",
+      "fromNode": "frontend",
+      "toNode": "supabase",
+      "text": "Auth",
+      "color": "#eab308",
+      "vv": {
+        "edgeType": "Auth_Flow"
+      }
+    },
+    {
+      "id": "mobile-supabase",
+      "fromNode": "mobile",
+      "toNode": "supabase",
+      "text": "Auth",
+      "color": "#eab308",
+      "vv": {
+        "edgeType": "Auth_Flow"
+      }
+    },
+    {
+      "id": "backend-database",
+      "fromNode": "backend",
+      "toNode": "database",
+      "text": "Read",
+      "color": "#ef4444",
+      "vv": {
+        "edgeType": "Database_Connection"
+      }
+    },
+    {
+      "id": "servers-database",
+      "fromNode": "servers",
+      "toNode": "database",
+      "text": "Write",
+      "color": "#ef4444",
+      "vv": {
+        "edgeType": "Database_Connection"
+      }
+    },
+    {
+      "id": "servers-mcp",
+      "fromNode": "servers",
+      "toNode": "mcp",
+      "text": "MCP",
+      "color": "#a855f7",
+      "vv": {
+        "edgeType": "MCP_Protocol"
+      }
+    },
+    {
+      "id": "mcp-sdk",
+      "fromNode": "mcp",
+      "toNode": "sdk",
+      "text": "Integration",
+      "color": "#f97316",
+      "vv": {
+        "edgeType": "API_Call"
+      }
+    },
+    {
+      "id": "cli-mcp",
+      "fromNode": "cli",
+      "toNode": "mcp",
+      "text": "Configure",
+      "color": "#f97316",
+      "vv": {
+        "edgeType": "API_Call"
+      }
+    },
+    {
+      "id": "backend-webhooks",
+      "fromNode": "backend",
+      "toNode": "webhooks",
+      "text": "Webhooks",
+      "color": "#06b6d4",
+      "vv": {
+        "edgeType": "HTTP"
+      }
+    },
+    {
+      "id": "servers-n8n",
+      "fromNode": "servers",
+      "toNode": "n8n",
+      "text": "Integration",
+      "color": "#06b6d4",
+      "vv": {
+        "edgeType": "HTTP"
+      }
+    },
+    {
+      "id": "servers-github",
+      "fromNode": "servers",
+      "toNode": "github",
+      "text": "Integration",
+      "color": "#06b6d4",
+      "vv": {
+        "edgeType": "HTTP"
+      }
+    },
+    {
+      "id": "frontend-websocket",
+      "fromNode": "frontend",
+      "toNode": "servers",
+      "text": "Real-time",
+      "color": "#a855f7",
+      "vv": {
+        "edgeType": "WebSocket"
+      }
+    },
+    {
+      "id": "mobile-websocket",
+      "fromNode": "mobile",
+      "toNode": "servers",
+      "text": "Real-time",
+      "color": "#a855f7",
+      "vv": {
+        "edgeType": "WebSocket"
+      }
+    }
+  ]
+}
