@@ -3,53 +3,53 @@ name: "Omnara Architecture Library"
 
 nodeComponents:
   Frontend:
-    category: "UI"
     icon: "Globe"
     description: "Web dashboard for users to view and interact with agents"
+    tags: ["UI"]
   Mobile:
-    category: "UI"
     icon: "Smartphone"
     description: "React Native mobile app for agent interaction"
+    tags: ["UI"]
   Backend:
-    category: "Service"
     icon: "Server"
     description: "FastAPI web dashboard API for read operations"
+    tags: ["Service"]
   Servers:
-    category: "Service"
     icon: "Cpu"
     description: "FastAPI + MCP agent communication server for write operations"
+    tags: ["Service"]
   Database:
-    category: "Storage"
     icon: "Database"
     description: "PostgreSQL database with unified messaging system"
+    tags: ["Storage"]
   Supabase:
-    category: "Service"
     icon: "Cloud"
     description: "Authentication and backend services"
+    tags: ["Service"]
   MCP:
-    category: "Protocol"
     icon: "Zap"
     description: "Model Context Protocol for agent communication"
+    tags: ["Protocol"]
   CLI:
-    category: "Tool"
     icon: "Terminal"
     description: "Node.js CLI tool for MCP configuration"
+    tags: ["Tool"]
   SDK:
-    category: "Library"
     icon: "Package"
     description: "Python SDK for agent integration"
+    tags: ["Library"]
   Webhooks:
-    category: "Integration"
     icon: "Webhook"
     description: "Webhook handlers for external integrations"
+    tags: ["Integration"]
   N8N:
-    category: "Integration"
     icon: "Workflow"
     description: "N8n workflow automation integration"
+    tags: ["Integration"]
   GitHub:
-    category: "Integration"
     icon: "Github"
     description: "GitHub Actions integration"
+    tags: ["Integration"]
 
 edgeComponents:
   HTTP:

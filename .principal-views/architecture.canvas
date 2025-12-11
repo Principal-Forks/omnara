@@ -1,80 +1,62 @@
 {
-  "vv": {
+  "pv": {
     "name": "Omnara Architecture",
     "version": "1.0.0",
     "nodeTypes": {
       "Frontend": {
-        "description": "Web dashboard for users to view and interact with agents",
-        "category": "UI"
+        "description": "Web dashboard for users to view and interact with agents"
       },
       "Mobile": {
-        "description": "React Native mobile app for agent interaction",
-        "category": "UI"
+        "description": "React Native mobile app for agent interaction"
       },
       "Backend": {
-        "description": "FastAPI web dashboard API for read operations",
-        "category": "Service"
+        "description": "FastAPI web dashboard API for read operations"
       },
       "Servers": {
-        "description": "FastAPI + MCP agent communication server for write operations",
-        "category": "Service"
+        "description": "FastAPI + MCP agent communication server for write operations"
       },
       "Database": {
-        "description": "PostgreSQL database with unified messaging system",
-        "category": "Storage"
+        "description": "PostgreSQL database with unified messaging system"
       },
       "Supabase": {
-        "description": "Authentication and backend services",
-        "category": "Service"
+        "description": "Authentication and backend services"
       },
       "MCP": {
-        "description": "Model Context Protocol for agent communication",
-        "category": "Protocol"
+        "description": "Model Context Protocol for agent communication"
       },
       "CLI": {
-        "description": "Node.js CLI tool for MCP configuration",
-        "category": "Tool"
+        "description": "Node.js CLI tool for MCP configuration"
       },
       "SDK": {
-        "description": "Python SDK for agent integration",
-        "category": "Library"
+        "description": "Python SDK for agent integration"
       },
       "Webhooks": {
-        "description": "Webhook handlers for external integrations",
-        "category": "Integration"
+        "description": "Webhook handlers for external integrations"
       },
       "N8N": {
-        "description": "N8n workflow automation integration",
-        "category": "Integration"
+        "description": "N8n workflow automation integration"
       },
       "GitHub": {
-        "description": "GitHub Actions integration",
-        "category": "Integration"
+        "description": "GitHub Actions integration"
       }
     },
     "edgeTypes": {
       "HTTP": {
-        "description": "HTTP/HTTPS communication",
         "style": "solid"
       },
       "WebSocket": {
-        "description": "Real-time WebSocket connection",
         "style": "animated"
       },
       "MCP_Protocol": {
-        "description": "Model Context Protocol communication",
         "style": "dashed"
       },
       "Database_Connection": {
-        "description": "Database connection",
         "style": "solid"
       },
       "Auth_Flow": {
-        "description": "Authentication flow",
         "style": "dotted"
       },
       "API_Call": {
-        "description": "REST API call",
         "style": "solid"
       }
     }
@@ -88,7 +70,7 @@
       "width": 120,
       "height": 60,
       "text": "Frontend",
-      "vv": {
+      "pv": {
         "nodeType": "Frontend",
         "shape": "rectangle"
       },
@@ -102,7 +84,7 @@
       "width": 120,
       "height": 60,
       "text": "Mobile",
-      "vv": {
+      "pv": {
         "nodeType": "Mobile",
         "shape": "rectangle"
       },
@@ -116,7 +98,7 @@
       "width": 120,
       "height": 60,
       "text": "Supabase",
-      "vv": {
+      "pv": {
         "nodeType": "Supabase",
         "shape": "cloud"
       },
@@ -130,7 +112,7 @@
       "width": 120,
       "height": 60,
       "text": "Backend",
-      "vv": {
+      "pv": {
         "nodeType": "Backend",
         "shape": "rectangle"
       },
@@ -144,7 +126,7 @@
       "width": 120,
       "height": 60,
       "text": "Servers",
-      "vv": {
+      "pv": {
         "nodeType": "Servers",
         "shape": "rectangle"
       },
@@ -158,7 +140,7 @@
       "width": 120,
       "height": 60,
       "text": "Database",
-      "vv": {
+      "pv": {
         "nodeType": "Database",
         "shape": "cylinder"
       },
@@ -172,7 +154,7 @@
       "width": 120,
       "height": 60,
       "text": "MCP",
-      "vv": {
+      "pv": {
         "nodeType": "MCP",
         "shape": "hexagon"
       },
@@ -186,7 +168,7 @@
       "width": 120,
       "height": 60,
       "text": "CLI",
-      "vv": {
+      "pv": {
         "nodeType": "CLI",
         "shape": "rectangle"
       },
@@ -200,7 +182,7 @@
       "width": 120,
       "height": 60,
       "text": "SDK",
-      "vv": {
+      "pv": {
         "nodeType": "SDK",
         "shape": "rectangle"
       },
@@ -214,7 +196,7 @@
       "width": 120,
       "height": 60,
       "text": "Webhooks",
-      "vv": {
+      "pv": {
         "nodeType": "Webhooks",
         "shape": "rectangle"
       },
@@ -228,7 +210,7 @@
       "width": 120,
       "height": 60,
       "text": "N8N",
-      "vv": {
+      "pv": {
         "nodeType": "N8N",
         "shape": "rectangle"
       },
@@ -242,7 +224,7 @@
       "width": 120,
       "height": 60,
       "text": "GitHub",
-      "vv": {
+      "pv": {
         "nodeType": "GitHub",
         "shape": "rectangle"
       },
@@ -254,9 +236,9 @@
       "id": "frontend-backend",
       "fromNode": "frontend",
       "toNode": "backend",
-      "text": "API calls",
+      "label": "API calls",
       "color": "#06b6d4",
-      "vv": {
+      "pv": {
         "edgeType": "HTTP"
       }
     },
@@ -264,9 +246,9 @@
       "id": "mobile-backend",
       "fromNode": "mobile",
       "toNode": "backend",
-      "text": "API calls",
+      "label": "API calls",
       "color": "#06b6d4",
-      "vv": {
+      "pv": {
         "edgeType": "HTTP"
       }
     },
@@ -274,9 +256,9 @@
       "id": "frontend-supabase",
       "fromNode": "frontend",
       "toNode": "supabase",
-      "text": "Auth",
+      "label": "Auth",
       "color": "#eab308",
-      "vv": {
+      "pv": {
         "edgeType": "Auth_Flow"
       }
     },
@@ -284,9 +266,9 @@
       "id": "mobile-supabase",
       "fromNode": "mobile",
       "toNode": "supabase",
-      "text": "Auth",
+      "label": "Auth",
       "color": "#eab308",
-      "vv": {
+      "pv": {
         "edgeType": "Auth_Flow"
       }
     },
@@ -294,9 +276,9 @@
       "id": "backend-database",
       "fromNode": "backend",
       "toNode": "database",
-      "text": "Read",
+      "label": "Read",
       "color": "#ef4444",
-      "vv": {
+      "pv": {
         "edgeType": "Database_Connection"
       }
     },
@@ -304,9 +286,9 @@
       "id": "servers-database",
       "fromNode": "servers",
       "toNode": "database",
-      "text": "Write",
+      "label": "Write",
       "color": "#ef4444",
-      "vv": {
+      "pv": {
         "edgeType": "Database_Connection"
       }
     },
@@ -314,9 +296,9 @@
       "id": "servers-mcp",
       "fromNode": "servers",
       "toNode": "mcp",
-      "text": "MCP",
+      "label": "MCP",
       "color": "#a855f7",
-      "vv": {
+      "pv": {
         "edgeType": "MCP_Protocol"
       }
     },
@@ -324,9 +306,9 @@
       "id": "mcp-sdk",
       "fromNode": "mcp",
       "toNode": "sdk",
-      "text": "Integration",
+      "label": "Integration",
       "color": "#f97316",
-      "vv": {
+      "pv": {
         "edgeType": "API_Call"
       }
     },
@@ -334,9 +316,9 @@
       "id": "cli-mcp",
       "fromNode": "cli",
       "toNode": "mcp",
-      "text": "Configure",
+      "label": "Configure",
       "color": "#f97316",
-      "vv": {
+      "pv": {
         "edgeType": "API_Call"
       }
     },
@@ -344,9 +326,9 @@
       "id": "backend-webhooks",
       "fromNode": "backend",
       "toNode": "webhooks",
-      "text": "Webhooks",
+      "label": "Webhooks",
       "color": "#06b6d4",
-      "vv": {
+      "pv": {
         "edgeType": "HTTP"
       }
     },
@@ -354,9 +336,9 @@
       "id": "servers-n8n",
       "fromNode": "servers",
       "toNode": "n8n",
-      "text": "Integration",
+      "label": "Integration",
       "color": "#06b6d4",
-      "vv": {
+      "pv": {
         "edgeType": "HTTP"
       }
     },
@@ -364,9 +346,9 @@
       "id": "servers-github",
       "fromNode": "servers",
       "toNode": "github",
-      "text": "Integration",
+      "label": "Integration",
       "color": "#06b6d4",
-      "vv": {
+      "pv": {
         "edgeType": "HTTP"
       }
     },
@@ -374,9 +356,9 @@
       "id": "frontend-websocket",
       "fromNode": "frontend",
       "toNode": "servers",
-      "text": "Real-time",
+      "label": "Real-time",
       "color": "#a855f7",
-      "vv": {
+      "pv": {
         "edgeType": "WebSocket"
       }
     },
@@ -384,9 +366,9 @@
       "id": "mobile-websocket",
       "fromNode": "mobile",
       "toNode": "servers",
-      "text": "Real-time",
+      "label": "Real-time",
       "color": "#a855f7",
-      "vv": {
+      "pv": {
         "edgeType": "WebSocket"
       }
     }
