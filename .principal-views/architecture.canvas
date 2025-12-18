@@ -235,7 +235,9 @@
     {
       "id": "frontend-backend",
       "fromNode": "frontend",
+      "fromSide": "bottom",
       "toNode": "backend",
+      "toSide": "top",
       "label": "API calls",
       "color": "#06b6d4",
       "pv": {
@@ -245,7 +247,9 @@
     {
       "id": "mobile-backend",
       "fromNode": "mobile",
+      "fromSide": "bottom",
       "toNode": "backend",
+      "toSide": "right",
       "label": "API calls",
       "color": "#06b6d4",
       "pv": {
@@ -255,7 +259,9 @@
     {
       "id": "frontend-supabase",
       "fromNode": "frontend",
+      "fromSide": "right",
       "toNode": "supabase",
+      "toSide": "top",
       "label": "Auth",
       "color": "#eab308",
       "pv": {
@@ -265,7 +271,9 @@
     {
       "id": "mobile-supabase",
       "fromNode": "mobile",
+      "fromSide": "left",
       "toNode": "supabase",
+      "toSide": "right",
       "label": "Auth",
       "color": "#eab308",
       "pv": {
@@ -275,7 +283,9 @@
     {
       "id": "backend-database",
       "fromNode": "backend",
+      "fromSide": "left",
       "toNode": "database",
+      "toSide": "top",
       "label": "Read",
       "color": "#ef4444",
       "pv": {
@@ -285,7 +295,9 @@
     {
       "id": "servers-database",
       "fromNode": "servers",
+      "fromSide": "left",
       "toNode": "database",
+      "toSide": "right",
       "label": "Write",
       "color": "#ef4444",
       "pv": {
@@ -295,7 +307,9 @@
     {
       "id": "servers-mcp",
       "fromNode": "servers",
+      "fromSide": "right",
       "toNode": "mcp",
+      "toSide": "top",
       "label": "MCP",
       "color": "#a855f7",
       "pv": {
@@ -305,7 +319,9 @@
     {
       "id": "mcp-sdk",
       "fromNode": "mcp",
+      "fromSide": "right",
       "toNode": "sdk",
+      "toSide": "left",
       "label": "Integration",
       "color": "#f97316",
       "pv": {
@@ -315,7 +331,9 @@
     {
       "id": "cli-mcp",
       "fromNode": "cli",
+      "fromSide": "right",
       "toNode": "mcp",
+      "toSide": "right",
       "label": "Configure",
       "color": "#f97316",
       "pv": {
@@ -325,7 +343,9 @@
     {
       "id": "backend-webhooks",
       "fromNode": "backend",
+      "fromSide": "right",
       "toNode": "webhooks",
+      "toSide": "left",
       "label": "Webhooks",
       "color": "#06b6d4",
       "pv": {
@@ -335,7 +355,9 @@
     {
       "id": "servers-n8n",
       "fromNode": "servers",
+      "fromSide": "bottom",
       "toNode": "n8n",
+      "toSide": "top",
       "label": "Integration",
       "color": "#06b6d4",
       "pv": {
@@ -345,7 +367,9 @@
     {
       "id": "servers-github",
       "fromNode": "servers",
+      "fromSide": "bottom",
       "toNode": "github",
+      "toSide": "top",
       "label": "Integration",
       "color": "#06b6d4",
       "pv": {
@@ -355,7 +379,9 @@
     {
       "id": "frontend-websocket",
       "fromNode": "frontend",
+      "fromSide": "bottom",
       "toNode": "servers",
+      "toSide": "top",
       "label": "Real-time",
       "color": "#a855f7",
       "pv": {
@@ -365,7 +391,9 @@
     {
       "id": "mobile-websocket",
       "fromNode": "mobile",
+      "fromSide": "bottom",
       "toNode": "servers",
+      "toSide": "top",
       "label": "Real-time",
       "color": "#a855f7",
       "pv": {
